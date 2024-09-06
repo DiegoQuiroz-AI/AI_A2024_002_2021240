@@ -1,6 +1,6 @@
 import random
 
-words = ("beatles","pillows", "oasis", "blur", "blossoms", "lennon","monkey","monterrey", "pink", "panic", "artificial", "intelligence")
+words = ("beatles", "pillows", "oasis", "blur", "blossoms", "lennon", "monkey", "monterrey", "pink", "panic", "strawberry", "guitar")
 
 #dictionary of key:()
 hangman_art = {0:               ("   ",

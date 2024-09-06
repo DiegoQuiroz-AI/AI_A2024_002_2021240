@@ -3,7 +3,7 @@ import random
 words = ("beatles", "pillows", "oasis", "blur", "blossoms", "lennon", "monkey", "monterrey", "pink", "panic", "strawberry", "guitar")
 
 #dictionary of key:()
-hangman_art = {0:               ("   ",
+drawing = {0:                   ("   ",
                                  "   ",
                                  "   "),
                              1: (" o ",
@@ -26,8 +26,8 @@ hangman_art = {0:               ("   ",
                                   "/ \\")}
 
 def display_man(wrong_guesses):
-  print("**********")
-  for line in hangman_art[wrong_guesses]:
+  print("*|********")
+  for line in drawing[wrong_guesses]:
     print(line)
   print("**********")
 
@@ -71,7 +71,7 @@ def main():
       display_answer(answer)
       print("You win!")
       is_running = False
-    elif wrong_guesses >= len(hangman_art) - 1:
+    elif wrong_guesses >= len(drawing) - 1:
       display_man(wrong_guesses)
       print("You lose! The word was", (answer))
       is_running = False
